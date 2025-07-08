@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>jotaAI 🤖</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="chat-container">
+    <h1>jotaAI 🤖</h1>
+    <div class="messages" id="messages"></div>
+    <div class="input-area">
+      <label for="imageInput" class="upload-btn" title="Enviar imagem">📎</label>
+      <input type="file" id="imageInput" accept="image/*" />
+      <input type="text" id="userInput" placeholder="Digite sua mensagem..." autocomplete="off" />
+      <!-- Thumbnail preview aqui -->
+      <div id="imagePreviewContainer"></div>
+      <button id="sendBtn" disabled title="Enviar mensagem">
+        <!-- Ícone aviãozinho SVG -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
